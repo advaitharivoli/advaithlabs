@@ -147,7 +147,7 @@
         <!-- Live Status Badge -->
         <div class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bento-card mb-6 shadow-xl animate-bounce">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-            <span class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-400">Personal Showcase Launching Soon</span>
+            <span class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-400">Launching Nov 10, 2026</span>
         </div>
 
         <!-- Headline Story -->
@@ -185,7 +185,7 @@
             <!-- Days -->
             <div class="bento-card rounded-3xl p-3 sm:p-4 flex flex-col items-center">
                 <div class="flip-digit w-16 h-18 sm:w-20 sm:h-24 rounded-2xl flex items-center justify-center mb-2">
-                    <span id="daysVal" class="font-mono font-extrabold text-2xl sm:text-3xl text-cyan-400 tracking-wider">10</span>
+                    <span id="daysVal" class="font-mono font-extrabold text-2xl sm:text-3xl text-cyan-400 tracking-wider">00</span>
                 </div>
                 <span class="font-mono text-[10px] uppercase tracking-widest font-bold" style="color: var(--text-muted);">Days</span>
             </div>
@@ -294,8 +294,8 @@
             });
         }
 
-        // 10-Day Countdown Timer Logic (Target = 10 Days from Now)
-        const targetTime = new Date().getTime() + (10 * 24 * 60 * 60 * 1000);
+        // Static Countdown Target Date: November 10, 2026, 00:00:00
+        const targetTime = new Date("November 10, 2026 00:00:00").getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
